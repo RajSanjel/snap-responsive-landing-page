@@ -1,0 +1,214 @@
+nav ul li {
+    list-style: none;
+    color: var(--medium-gray);
+    padding: 25px;
+}
+
+nav ul {
+    display: grid;
+    grid-auto-flow: column;
+    height: 60px;
+    width: 100%;
+    background-color: var(--almost-White);
+}
+
+.left-section {
+    display: flex;
+    align-items: top;
+}
+
+.right-section {
+    display: flex;
+    margin-top: 0;
+    justify-content: flex-end;
+
+}
+
+.right-section button {
+    padding: 10px 20px;
+    color: var(--medium-gray);
+    background-color: transparent;
+    border: 2px solid var(--medium-gray);
+    border-radius: 10px;
+    border: solid;
+}
+
+.right-section li:nth-child(2) {
+    padding: 15px;
+}
+
+.right-section button:hover {
+    border-color: var(--almost-black);
+    color: var(--almost-black);
+}
+
+.left-section {
+    position: relative;
+}
+
+.dropdown-features {
+    position: absolute;
+    background-color: white;
+    box-shadow: 15px 15px 50px -35px var(--almost-black);
+    text-align: left;
+    width: 130px;
+    height: 130px;
+    left: 6rem;
+    top: 4rem;
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+    grid-auto-flow: row;
+    display: block;
+}
+
+.dropdown-features li,
+.dropdown-company li {
+    padding: .4rem;
+}
+
+.dropdown-company {
+    position: absolute;
+    background-color: white;
+    box-shadow: 15px 15px 50px -35px var(--almost-black);
+    text-align: left;
+    width: 130px;
+    height: 100px;
+    left: 16rem;
+    top: 4rem;
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+    grid-auto-flow: row;
+}
+
+.hamClose {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.ham {
+
+    display: grid;
+}
+
+.hamIcon {
+    display: none;
+}
+
+.forMob {
+    display: none;
+}
+
+.logo {
+    display: block;
+}
+
+.hamClose {
+    display: none;
+}
+
+@media (max-width:900px) {
+    .hamClose {
+        display: block;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .logoMob {
+        display: block;
+    }
+
+    body {
+        position: relative;
+    }
+
+    .ham {
+        position: absolute;
+        width: 50%;
+        background-color: var(--almost-White);
+        right: 0;
+        bottom: 0;
+        top: 0;
+        padding-left: 10px;
+        box-shadow: 0 0 0 100vmax rgb(0 0 0 /0.6);
+
+    }
+
+    li {
+        padding: 0;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--almost-White);
+    }
+
+    .left-section {
+        display: flex;
+        align-items: top;
+        flex-direction: column;
+    }
+
+    .right-section {
+        display: flex;
+        margin-top: 0;
+        justify-content: flex-end;
+        flex-direction: column;
+    }
+
+    .dropdown-features {
+        background-color: white;
+        box-shadow: none;
+        text-align: left;
+        left: 0;
+        top: 4rem;
+        border-radius: 10px;
+        display: grid;
+        place-items: center;
+        grid-auto-flow: row;
+        display: block;
+        padding-left: 50px;
+    }
+
+    .hamIcon {
+        display: block;
+    }
+
+    .forMob {
+        padding: 1.5rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .mobile-drop li {
+        padding: 10px;
+        padding-right: 40px;
+    }
+
+    .mobile-drop-company li {
+        padding: 10px;
+        padding-right: 40px;
+    }
+
+    .mobile-drop,
+    .mobile-drop-company {
+        padding-left: 40px;
+    }
+}
